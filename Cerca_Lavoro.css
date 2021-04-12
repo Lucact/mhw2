@@ -1,0 +1,273 @@
+header {
+    background-image: url("https://www.wolterskluwer.com/-/media/project/wolterskluwer/oneweb/www/lr/it/offerta-fisco-lavoro-contabilita/it-offerta-fisco-lavoro-e-contabilita-main-page.jpg?rev=a76dc41a33d94b22ad38cba1ac131d18");
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 15%;
+    display:flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+
+    border-bottom: 1px solid darkslategray;
+
+    position: relative;
+}
+
+#container {
+    min-height:78%;
+    height:auto !important;
+
+}
+
+#overlay{
+    position: absolute;
+    top:0;
+    bottom:0;
+    height: 100%;
+    width: 100%;
+    background-color: rgba(0,0,0,0.3);
+}
+
+#Nome_sito, nav{
+    z-index: 1;
+}
+
+#Nome_sito{
+    color: darkslategray;
+    font-weight: bolder;
+    font-size: 60px;
+    text-shadow: 2px 2px 4px white;
+}
+
+html, body {
+    margin: 0;
+    background-color: mintcream;
+    height: 100%;
+
+    font-family: 'Oswald', sans-serif;
+}
+
+a:link{
+    color:white;
+    text-decoration: none;
+}
+
+a:visited{
+    color: wheat;
+}
+
+#main a{
+    display: inline-block;
+    font-size: 20px;
+    margin-left: 30%;
+    width: 100px;
+}
+
+#links a{
+    font-weight: bold;
+    font-size: 25px;
+    background-color: white;
+    color: darkslategrey;
+    padding: 5px 15px;
+    border: 1px solid darkslategrey;
+    border-radius:50px;
+    z-index: 0;
+    box-shadow: 2px 1px 3px 1px black;
+}
+
+#Nome_sito h3{
+    font-style: italic;
+}
+
+
+
+footer {
+    background-color: black;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    height: 50px;
+    width: 100%;
+    color: white;
+}
+
+#element1{
+    margin-left: 25px;
+}
+#element2{
+    margin-right: 25px;
+}
+#main , #preferiti {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-around;
+    background-color: mintcream;
+
+    align-items: center;
+}
+
+
+.separatore{
+    background-color: darkslategrey;
+    color: white;
+    font-weight: bold;
+    text-align: center;
+    text-shadow: 2px 2px 4px black;
+
+    border-bottom: 2px solid dimgrey;
+    border-top: 2px solid dimgrey;
+
+    box-shadow: 0 4px 5px 0 black;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.separatore h1 {
+    display: inline-block;
+    margin-left: 5px;
+    margin-top: 1px;
+    margin-bottom: 1px;
+}
+
+.offerta {
+    background-color: darkslategrey;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+
+    padding:30px;
+    margin:20px;
+    
+    height: auto;
+    width: 40%;
+
+    border: 2px solid dimgrey;
+    border-radius: 10px;
+
+    position: relative;
+
+    box-shadow: 5px 3px 8px 2px black;
+}
+
+#ricerca {
+    -webkit-box-shadow:  2px  2px 1px black;
+}
+
+
+.testo{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+.immagine {
+    width: 33%;
+    height: 150px;
+    margin-right: 20px;
+    border-radius: 5px;
+
+    box-shadow: 2px 1px 3px 1px black;
+}
+
+.stella {
+
+    position: absolute;
+    top: 20px;
+    right: 20px;
+
+    height: 15%;
+    max-height: 25px;
+    width: auto;
+}
+
+
+.corpo{
+    color:white;
+}
+
+.titolo{
+    font-family: 'Dela Gothic One', cursive;
+    font-size: 20px;
+}
+
+@media (max-width: 740px){
+    body{
+        font-size: 6px;
+    }
+}
+
+#menu{
+    display: none;
+}
+
+#menu div{
+    width: 25px;
+    height: 3px;
+    background-color: white;
+    margin: 5px 0;
+}
+
+.bottone {
+    color: darkslategray;
+    font-weight: 700;
+    text-decoration: none;
+    user-select: none;
+    padding: .5em 2em;
+    outline: none;
+    border-radius: 1px;
+    transition: 0.2s;
+
+    box-shadow: 2px 1px 2px 1px black;
+}
+
+
+@media (max-width: 770px) {
+    #links{
+        display: none;
+    }
+    #menu{
+        display: inline-block;
+    }
+    #Nome_sito{
+        display: flex;
+        justify-content: center;
+        margin-left: 15%;
+    }
+}
+
+@media (max-width: 600px) {
+    #Nome_sito {
+        display: flex;
+        justify-content: center;
+        margin-left: 10%;
+    }
+}
+
+@media (max-width: 539px) {
+    #Nome_sito {
+        display: flex;
+        justify-content: center;
+        margin-left: 6%;
+    }
+}
+
+@media (max-width: 440px) {
+    #Nome_sito {
+        display: flex;
+        justify-content: center;
+        margin-left: calc(90px - 2%);
+    }
+}
+
+#search {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    margin:15px;
+}
+
+.hide {
+    display:none;
+}

@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="=width=device-width, initial-scale=1">
+    <title>Work</title>
+    <link rel="stylesheet" href="Cerca_Lavoro.css">
+    <script src="contents.js" defer></script>
+    <script src="Cerca_Lavoro.js" defer></script>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Dela+Gothic+One&family=Roboto&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Oswald&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <header>
+        <div id="overlay"></div>
+        <div id="Nome_sito">
+            <h3>Cerca Lavoro</h3>
+        </div>
+        <nav>
+            <div id="menu">
+                <div></div>
+                <div></div>
+                <div></div>
+            </div>
+            <div id="links">
+                <a href="https://www.aranzulla.it/">Home</a>
+                <a href="http://www.claudiobisio.it/">Send CV</a>
+                <a href="https://angelopintus.com/">Read CV</a>
+            </div>
+        </nav>
+    </header>
+    <div id="container">
+        <div id="bloccoPreferiti">
+            <div class="separatore"><h1>PREFERITI</h1> </div>
+            <div id="preferiti"></div>
+        </div>
+        <div class="separatore"> <h1>OFFERTE DI LAVORO</h1>
+            <div id="search">
+                <label>
+                    <span>Cerca parola chiave: </span>
+                    <input id="ricerca" onkeyup="ricerca()" name="testo" type="text"></input>
+                </label>
+            </div>
+        </div>
+        <div id="main">
+            <p id="avviso">Non ci sono altre offerte.</p>
+        </div>
+    </div>
+    <footer>
+        <h3 id="element1">Luca Rodolico O46001856</h3>
+        <h3 id="element2">WebProgramming 2020/21</h3>
+    </footer>
+</body>
+
+</html>
